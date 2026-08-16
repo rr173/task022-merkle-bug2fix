@@ -152,7 +152,7 @@ func MakeProof(blocks []string, index int) (Proof, error) {
 		idx /= 2
 	}
 	return Proof{
-		LeafHash: leaves[0].Hex(),
+		LeafHash: leaves[index].Hex(),
 		Steps:    steps,
 		Root:     level[0].Hex(),
 	}, nil
